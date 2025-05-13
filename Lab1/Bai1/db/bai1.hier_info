@@ -1,0 +1,84 @@
+|bai1
+m[0] <= mux2_1b:m0.port0
+m[1] <= mux2_1b:m1.port0
+m[2] <= mux2_1b:m2.port0
+m[3] <= mux2_1b:m3.port0
+m[4] <= mux2_1b:m4.port0
+m[5] <= mux2_1b:m5.port0
+m[6] <= mux2_1b:m6.port0
+m[7] <= mux2_1b:m7.port0
+x[0] => x[0].IN1
+x[1] => x[1].IN1
+x[2] => x[2].IN1
+x[3] => x[3].IN1
+x[4] => x[4].IN1
+x[5] => x[5].IN1
+x[6] => x[6].IN1
+x[7] => x[7].IN1
+y[0] => y[0].IN1
+y[1] => y[1].IN1
+y[2] => y[2].IN1
+y[3] => y[3].IN1
+y[4] => y[4].IN1
+y[5] => y[5].IN1
+y[6] => y[6].IN1
+y[7] => y[7].IN1
+s => s.IN8
+
+
+|bai1|mux2_1b:m0
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+s => m.OUTPUTSELECT
+x => m.DATAA
+y => m.DATAB
+
+
+|bai1|mux2_1b:m1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+s => m.OUTPUTSELECT
+x => m.DATAA
+y => m.DATAB
+
+
+|bai1|mux2_1b:m2
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+s => m.OUTPUTSELECT
+x => m.DATAA
+y => m.DATAB
+
+
+|bai1|mux2_1b:m3
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+s => m.OUTPUTSELECT
+x => m.DATAA
+y => m.DATAB
+
+
+|bai1|mux2_1b:m4
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+s => m.OUTPUTSELECT
+x => m.DATAA
+y => m.DATAB
+
+
+|bai1|mux2_1b:m5
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+s => m.OUTPUTSELECT
+x => m.DATAA
+y => m.DATAB
+
+
+|bai1|mux2_1b:m6
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+s => m.OUTPUTSELECT
+x => m.DATAA
+y => m.DATAB
+
+
+|bai1|mux2_1b:m7
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+s => m.OUTPUTSELECT
+x => m.DATAA
+y => m.DATAB
+
+

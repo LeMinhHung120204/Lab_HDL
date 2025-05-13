@@ -1,0 +1,144 @@
+|bai2
+m[0] <= bai2a:m5110.port0
+m[1] <= bai2a:m5111.port0
+m[2] <= bai2a:m5112.port0
+s[0] => s[0]~2.IN3
+s[1] => s[1]~1.IN3
+s[2] => s[2]~0.IN3
+u[0] => u[0]~2.IN1
+u[1] => u[1]~1.IN1
+u[2] => u[2]~0.IN1
+v[0] => v[0]~2.IN1
+v[1] => v[1]~1.IN1
+v[2] => v[2]~0.IN1
+w[0] => w[0]~2.IN1
+w[1] => w[1]~1.IN1
+w[2] => w[2]~0.IN1
+x[0] => x[0]~2.IN1
+x[1] => x[1]~1.IN1
+x[2] => x[2]~0.IN1
+y[0] => y[0]~2.IN1
+y[1] => y[1]~1.IN1
+y[2] => y[2]~0.IN1
+
+
+|bai2|bai2a:m5110
+m <= mux2_1:m3.port0
+s[0] => s[0]~2.IN2
+s[1] => s[1]~1.IN1
+s[2] => s[2]~0.IN1
+u => u~0.IN1
+v => v~0.IN1
+w => w~0.IN1
+x => x~0.IN1
+y => y~0.IN1
+
+
+|bai2|bai2a:m5110|mux2_1:m0
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+s => m~0.OUTPUTSELECT
+x => m~0.DATAA
+y => m~0.DATAB
+
+
+|bai2|bai2a:m5110|mux2_1:m1
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+s => m~0.OUTPUTSELECT
+x => m~0.DATAA
+y => m~0.DATAB
+
+
+|bai2|bai2a:m5110|mux2_1:m2
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+s => m~0.OUTPUTSELECT
+x => m~0.DATAA
+y => m~0.DATAB
+
+
+|bai2|bai2a:m5110|mux2_1:m3
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+s => m~0.OUTPUTSELECT
+x => m~0.DATAA
+y => m~0.DATAB
+
+
+|bai2|bai2a:m5111
+m <= mux2_1:m3.port0
+s[0] => s[0]~2.IN2
+s[1] => s[1]~1.IN1
+s[2] => s[2]~0.IN1
+u => u~0.IN1
+v => v~0.IN1
+w => w~0.IN1
+x => x~0.IN1
+y => y~0.IN1
+
+
+|bai2|bai2a:m5111|mux2_1:m0
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+s => m~0.OUTPUTSELECT
+x => m~0.DATAA
+y => m~0.DATAB
+
+
+|bai2|bai2a:m5111|mux2_1:m1
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+s => m~0.OUTPUTSELECT
+x => m~0.DATAA
+y => m~0.DATAB
+
+
+|bai2|bai2a:m5111|mux2_1:m2
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+s => m~0.OUTPUTSELECT
+x => m~0.DATAA
+y => m~0.DATAB
+
+
+|bai2|bai2a:m5111|mux2_1:m3
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+s => m~0.OUTPUTSELECT
+x => m~0.DATAA
+y => m~0.DATAB
+
+
+|bai2|bai2a:m5112
+m <= mux2_1:m3.port0
+s[0] => s[0]~2.IN2
+s[1] => s[1]~1.IN1
+s[2] => s[2]~0.IN1
+u => u~0.IN1
+v => v~0.IN1
+w => w~0.IN1
+x => x~0.IN1
+y => y~0.IN1
+
+
+|bai2|bai2a:m5112|mux2_1:m0
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+s => m~0.OUTPUTSELECT
+x => m~0.DATAA
+y => m~0.DATAB
+
+
+|bai2|bai2a:m5112|mux2_1:m1
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+s => m~0.OUTPUTSELECT
+x => m~0.DATAA
+y => m~0.DATAB
+
+
+|bai2|bai2a:m5112|mux2_1:m2
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+s => m~0.OUTPUTSELECT
+x => m~0.DATAA
+y => m~0.DATAB
+
+
+|bai2|bai2a:m5112|mux2_1:m3
+m <= m~0.DB_MAX_OUTPUT_PORT_TYPE
+s => m~0.OUTPUTSELECT
+x => m~0.DATAA
+y => m~0.DATAB
+
+

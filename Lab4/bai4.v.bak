@@ -1,0 +1,42 @@
+module tb_RAM_lab5;
+    reg clock, cs, wr_e, oe;
+    reg [6:0] addr;
+    wire [7:0] data;
+    reg [7:0] data_reg;
+    reg data_dir;
+
+    // Điều khiển hướng truyền dữ liệu
+    assign data = data_dir ? data_reg : 8'bz;
+
+    // Khởi tạo module RAM
+    RAM_lab5 uut (
+        .clock(clock),
+        .cs(cs),
+        .wr_e(wr_e),
+        .oe(oe),
+        .addr(addr),
+        .data(data)
+    );
+
+    // Tạo xung clock
+    always #5 clock = ~clock;
+
+    initial begin
+        clock = 0;
+        cs = 0; wr_e = 0; oe = 0;
+        addr = 0;
+        data_dir = 0;
+        data_reg = 8'h00;
+
+        // Ghi giá trị vào RAM
+        #10; cs = 1; wr_e = 1; addr = 7'd10; data_dir = 1; data_reg = 8'hAA;
+        #10; cs = 0; data_dir = 0; // kết thúc ghi
+
+        // Đọc giá trị từ RAM
+        #10; cs = 1; wr_e = 0; oe = 1; addr = 7'd10;
+        #10; cs = 0; oe = 0;
+
+        #20;
+        $stop;
+    end
+endmodule

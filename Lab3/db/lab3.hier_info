@@ -1,0 +1,93 @@
+|test
+CLOCK_50 => CLOCK_50.IN1
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+LEDR[0] <= c3:cau3.led
+
+
+|test|c3:cau3
+clk_50 => clk_50.IN1
+clr => clr.IN1
+start => next_state.OUTPUTSELECT
+start => next_state.OUTPUTSELECT
+start => Selector0.IN1
+start => buffer[2].ENA
+start => buffer[1].ENA
+start => buffer[0].ENA
+in[0] => Equal0.IN2
+in[0] => Equal1.IN2
+in[0] => Equal2.IN1
+in[0] => Equal3.IN2
+in[0] => buffer[0].DATAIN
+in[1] => Equal0.IN1
+in[1] => Equal1.IN1
+in[1] => Equal2.IN2
+in[1] => Equal3.IN1
+in[1] => buffer[1].DATAIN
+in[2] => Equal0.IN0
+in[2] => Equal1.IN0
+in[2] => Equal2.IN0
+in[2] => Equal3.IN0
+in[2] => buffer[2].DATAIN
+led <= led.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test|c3:cau3|clk_500ms:clk1
+clk_50 => count[0].CLK
+clk_50 => count[1].CLK
+clk_50 => count[2].CLK
+clk_50 => count[3].CLK
+clk_50 => count[4].CLK
+clk_50 => count[5].CLK
+clk_50 => count[6].CLK
+clk_50 => count[7].CLK
+clk_50 => count[8].CLK
+clk_50 => count[9].CLK
+clk_50 => count[10].CLK
+clk_50 => count[11].CLK
+clk_50 => count[12].CLK
+clk_50 => count[13].CLK
+clk_50 => count[14].CLK
+clk_50 => count[15].CLK
+clk_50 => count[16].CLK
+clk_50 => count[17].CLK
+clk_50 => count[18].CLK
+clk_50 => count[19].CLK
+clk_50 => count[20].CLK
+clk_50 => count[21].CLK
+clk_50 => count[22].CLK
+clk_50 => count[23].CLK
+clk_50 => count[24].CLK
+clk_50 => clk~reg0.CLK
+clr => clk~reg0.ACLR
+clr => count[0].ENA
+clr => count[24].ENA
+clr => count[23].ENA
+clr => count[22].ENA
+clr => count[21].ENA
+clr => count[20].ENA
+clr => count[19].ENA
+clr => count[18].ENA
+clr => count[17].ENA
+clr => count[16].ENA
+clr => count[15].ENA
+clr => count[14].ENA
+clr => count[13].ENA
+clr => count[12].ENA
+clr => count[11].ENA
+clr => count[10].ENA
+clr => count[9].ENA
+clr => count[8].ENA
+clr => count[7].ENA
+clr => count[6].ENA
+clr => count[5].ENA
+clr => count[4].ENA
+clr => count[3].ENA
+clr => count[2].ENA
+clr => count[1].ENA
+clk <= clk~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

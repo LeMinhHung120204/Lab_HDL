@@ -1,0 +1,49 @@
+|c2_2
+clk => clk~0.IN1
+clr => clr~0.IN1
+enable => enable~0.IN1
+out[0] <= c2_1:c2.port3
+out[1] <= c2_1:c2.port3
+out[2] <= c2_1:c2.port3
+out[3] <= c2_1:c2.port3
+out[4] <= c2_1:c2.port3
+out[5] <= c2_1:c2.port3
+out[6] <= c2_1:c2.port3
+out[7] <= c2_1:c2.port3
+
+
+|c2_2|c2_1:c2
+clk => out[0]~reg0.CLK
+clk => out[1]~reg0.CLK
+clk => out[2]~reg0.CLK
+clk => out[3]~reg0.CLK
+clk => out[4]~reg0.CLK
+clk => out[5]~reg0.CLK
+clk => out[6]~reg0.CLK
+clk => out[7]~reg0.CLK
+clr => out~8.OUTPUTSELECT
+clr => out~9.OUTPUTSELECT
+clr => out~10.OUTPUTSELECT
+clr => out~11.OUTPUTSELECT
+clr => out~12.OUTPUTSELECT
+clr => out~13.OUTPUTSELECT
+clr => out~14.OUTPUTSELECT
+clr => out~15.OUTPUTSELECT
+enable => out~0.OUTPUTSELECT
+enable => out~1.OUTPUTSELECT
+enable => out~2.OUTPUTSELECT
+enable => out~3.OUTPUTSELECT
+enable => out~4.OUTPUTSELECT
+enable => out~5.OUTPUTSELECT
+enable => out~6.OUTPUTSELECT
+enable => out~7.OUTPUTSELECT
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

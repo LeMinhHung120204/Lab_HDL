@@ -1,0 +1,154 @@
+|bai4
+HEX1[0] <= seg7_decode:seg1.port0
+HEX1[1] <= seg7_decode:seg1.port0
+HEX1[2] <= seg7_decode:seg1.port0
+HEX1[3] <= seg7_decode:seg1.port0
+HEX1[4] <= seg7_decode:seg1.port0
+HEX1[5] <= seg7_decode:seg1.port0
+HEX1[6] <= seg7_decode:seg1.port0
+HEX0[0] <= seg7_decode:seg0.port0
+HEX0[1] <= seg7_decode:seg0.port0
+HEX0[2] <= seg7_decode:seg0.port0
+HEX0[3] <= seg7_decode:seg0.port0
+HEX0[4] <= seg7_decode:seg0.port0
+HEX0[5] <= seg7_decode:seg0.port0
+HEX0[6] <= seg7_decode:seg0.port0
+SW[0] => SW[0].IN3
+SW[1] => SW[1].IN3
+SW[2] => SW[2].IN3
+SW[3] => SW[3].IN2
+
+
+|bai4|comparator:c0
+y <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => LessThan0.IN8
+x[1] => LessThan0.IN7
+x[2] => LessThan0.IN6
+x[3] => LessThan0.IN5
+
+
+|bai4|A:tmp
+x[0] => Decoder1.IN2
+x[1] => Decoder0.IN1
+x[1] => Decoder1.IN1
+x[2] => Decoder0.IN0
+x[2] => Decoder1.IN0
+out[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bai4|mux2_1b:mu0
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+s => m.OUTPUTSELECT
+x => m.DATAA
+y => m.DATAB
+
+
+|bai4|mux2_1b:mu1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+s => m.OUTPUTSELECT
+x => m.DATAA
+y => m.DATAB
+
+
+|bai4|mux2_1b:mu2
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+s => m.OUTPUTSELECT
+x => m.DATAA
+y => m.DATAB
+
+
+|bai4|mux2_1b:mu3
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+s => m.OUTPUTSELECT
+x => m.DATAA
+y => m.DATAB
+
+
+|bai4|seg7_decode:seg0
+HEX[0] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[6] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+sw[0] => HEX.IN0
+sw[0] => HEX.IN0
+sw[0] => HEX.IN0
+sw[0] => HEX.IN1
+sw[0] => HEX.IN1
+sw[0] => HEX.IN1
+sw[0] => HEX.IN1
+sw[0] => HEX.IN1
+sw[0] => HEX.IN1
+sw[1] => HEX.IN1
+sw[1] => HEX.IN0
+sw[1] => HEX.IN1
+sw[1] => HEX.IN0
+sw[1] => HEX.IN1
+sw[1] => HEX.IN1
+sw[1] => HEX.IN0
+sw[1] => HEX.IN0
+sw[2] => HEX.IN1
+sw[2] => HEX.IN0
+sw[2] => HEX.IN1
+sw[2] => HEX.IN0
+sw[2] => HEX.IN0
+sw[2] => HEX.IN0
+sw[2] => HEX.IN1
+sw[3] => HEX.IN1
+sw[3] => HEX.IN1
+sw[3] => HEX.IN1
+sw[3] => HEX.IN1
+sw[3] => HEX.IN1
+sw[3] => HEX.IN1
+sw[3] => HEX.IN1
+sw[3] => HEX.IN1
+sw[3] => HEX.IN1
+
+
+|bai4|seg7_decode:seg1
+HEX[0] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[6] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+sw[0] => HEX.IN0
+sw[0] => HEX.IN0
+sw[0] => HEX.IN0
+sw[0] => HEX.IN1
+sw[0] => HEX.IN1
+sw[0] => HEX.IN1
+sw[0] => HEX.IN1
+sw[0] => HEX.IN1
+sw[0] => HEX.IN1
+sw[1] => HEX.IN1
+sw[1] => HEX.IN0
+sw[1] => HEX.IN1
+sw[1] => HEX.IN0
+sw[1] => HEX.IN1
+sw[1] => HEX.IN1
+sw[1] => HEX.IN0
+sw[1] => HEX.IN0
+sw[2] => HEX.IN1
+sw[2] => HEX.IN0
+sw[2] => HEX.IN1
+sw[2] => HEX.IN0
+sw[2] => HEX.IN0
+sw[2] => HEX.IN0
+sw[2] => HEX.IN1
+sw[3] => HEX.IN1
+sw[3] => HEX.IN1
+sw[3] => HEX.IN1
+sw[3] => HEX.IN1
+sw[3] => HEX.IN1
+sw[3] => HEX.IN1
+sw[3] => HEX.IN1
+sw[3] => HEX.IN1
+sw[3] => HEX.IN1
+
+

@@ -1,0 +1,26 @@
+module DataMemory (
+    input clk,
+    input [9:0] Address,
+    input [7:0] WriteData,
+    input WriteEn,
+    input ReadEn,
+    output reg [7:0] ReadData
+);
+    // Khai báo vùng nhớ 1024 byte
+    reg [7:0] memory [0:1023];
+
+    // Ghi dữ liệu khi có WriteEn ở cạnh lên của xung clk
+    always @(posedge clk) begin
+        if (WriteEn) begin
+            memory[Address] <= WriteData;
+        end
+    end
+
+    // Đọc dữ liệu bất đồng bộ khi ReadEn = 1
+    always @(*) begin
+        if (ReadEn)
+            ReadData = memory[Address];
+        else
+            ReadData = 8'b0;
+    end
+endmodule

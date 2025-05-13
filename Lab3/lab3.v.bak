@@ -1,0 +1,5 @@
+module lab3(
+	input x,
+	output y
+);
+endmodule

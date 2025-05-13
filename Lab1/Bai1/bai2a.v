@@ -1,0 +1,19 @@
+module bai2a(
+	output m,
+	input [2:0] s,
+	input u, v, w, x, y
+);
+	wire uv, wx, uvwx;
+	mux2_1 m0(uv, s[0], u, v);
+	mux2_1 m1(wx, s[0], w, x);
+	mux2_1 m2(uvwx, s[1], uv, wx);
+	mux2_1 m3(m, s[2], y, uvwx);
+	
+endmodule 
+
+module mux2_1 (
+	output wire m,
+	input s, x, y
+);
+	assign m = s ? x : y;
+endmodule

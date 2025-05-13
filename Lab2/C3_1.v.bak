@@ -1,0 +1,19 @@
+module counterBCD(
+	input clk, clr,
+	output reg [3:0] q;
+);
+	
+	always @(posedge clk or negedge clr) begin
+		if (!clr)
+			q <= 4'd0;
+		else
+			q <= q + 1;
+	end
+endmodule 
+
+module c3_1(
+	input clk, clr;
+	output [6:0] HEX
+);
+	assign HEX = 7'd0;
+endmodule 

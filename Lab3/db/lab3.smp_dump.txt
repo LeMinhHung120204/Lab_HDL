@@ -1,0 +1,24 @@
+
+State Machine - |test|c3:cau3|state
+Name state.dash3 state.dash2 state.dash1 state.dot4 state.dot3 state.dot2 state.dot1 state.s0 state.pause 
+state.s0 0 0 0 0 0 0 0 0 0 
+state.dot1 0 0 0 0 0 0 1 1 0 
+state.dot2 0 0 0 0 0 1 0 1 0 
+state.dot3 0 0 0 0 1 0 0 1 0 
+state.dot4 0 0 0 1 0 0 0 1 0 
+state.dash1 0 0 1 0 0 0 0 1 0 
+state.dash2 0 1 0 0 0 0 0 1 0 
+state.dash3 1 0 0 0 0 0 0 1 0 
+state.pause 0 0 0 0 0 0 0 1 1 
+
+State Machine - |test|c3:cau3|prev
+Name prev.dash3 prev.dash2 prev.dash1 prev.dot4 prev.dot3 prev.dot2 prev.dot1 prev.s0 prev.pause 
+prev.s0 0 0 0 0 0 0 0 0 0 
+prev.dot1 0 0 0 0 0 0 1 1 0 
+prev.dot2 0 0 0 0 0 1 0 1 0 
+prev.dot3 0 0 0 0 1 0 0 1 0 
+prev.dot4 0 0 0 1 0 0 0 1 0 
+prev.dash1 0 0 1 0 0 0 0 1 0 
+prev.dash2 0 1 0 0 0 0 0 1 0 
+prev.dash3 1 0 0 0 0 0 0 1 0 
+prev.pause 0 0 0 0 0 0 0 1 1 

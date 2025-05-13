@@ -1,0 +1,38 @@
+|bai5
+Qa <= bai5a:a.port0
+Qb <= bai5a:b.port0
+Qc <= bai5a:c.port0
+Qan <= bai5a:a.port1
+Qbn <= bai5a:b.port1
+Qcn <= bai5a:c.port1
+D => D.IN3
+Clk => Clk.IN2
+
+
+|bai5|bai5a:a
+Qa <= Qa.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb.DB_MAX_OUTPUT_PORT_TYPE
+D => S_g.IN0
+D => R_g.IN0
+Clk => S_g.IN1
+Clk => R_g.IN1
+
+
+|bai5|bai5a:b
+Qa <= Qa.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb.DB_MAX_OUTPUT_PORT_TYPE
+D => S_g.IN0
+D => R_g.IN0
+Clk => S_g.IN1
+Clk => R_g.IN1
+
+
+|bai5|bai5a:c
+Qa <= Qa.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb.DB_MAX_OUTPUT_PORT_TYPE
+D => S_g.IN0
+D => R_g.IN0
+Clk => S_g.IN1
+Clk => R_g.IN1
+
+

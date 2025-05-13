@@ -1,0 +1,235 @@
+Simulator report for bai4
+Fri Mar 14 14:53:36 2025
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 70 nodes     ;
+; Simulation Coverage         ;      95.71 % ;
+; Total Number of Transitions ; 3848         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                              ;
++--------------------------------------------------------------------------------------------+----------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                            ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                         ; Timing        ;
+; Start time                                                                                 ; 0 ns                                               ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                ;               ;
+; Vector input source                                                                        ; C:/Hung/Year3/HK2/CE213/Lab/Lab1/bai4/Waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                 ; On            ;
+; Check outputs                                                                              ; Off                                                ; Off           ;
+; Report simulation coverage                                                                 ; On                                                 ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                 ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                 ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                 ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                ; Off           ;
+; Detect glitches                                                                            ; Off                                                ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                 ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                         ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                               ; Auto          ;
++--------------------------------------------------------------------------------------------+----------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      95.71 % ;
+; Total nodes checked                                 ; 70           ;
+; Total output ports checked                          ; 70           ;
+; Total output ports with complete 1/0-value coverage ; 67           ;
+; Total output ports with no 1/0-value coverage       ; 3            ;
+; Total output ports with no 1-value coverage         ; 3            ;
+; Total output ports with no 0-value coverage         ; 3            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                          ;
++---------------------------------+---------------------------------+------------------+
+; Node Name                       ; Output Port Name                ; Output Port Type ;
++---------------------------------+---------------------------------+------------------+
+; |bai4|HEX1[0]                   ; |bai4|HEX1[0]                   ; pin_out          ;
+; |bai4|HEX1[3]                   ; |bai4|HEX1[3]                   ; pin_out          ;
+; |bai4|HEX1[4]                   ; |bai4|HEX1[4]                   ; pin_out          ;
+; |bai4|HEX1[5]                   ; |bai4|HEX1[5]                   ; pin_out          ;
+; |bai4|HEX0[0]                   ; |bai4|HEX0[0]                   ; pin_out          ;
+; |bai4|HEX0[1]                   ; |bai4|HEX0[1]                   ; pin_out          ;
+; |bai4|HEX0[2]                   ; |bai4|HEX0[2]                   ; pin_out          ;
+; |bai4|HEX0[3]                   ; |bai4|HEX0[3]                   ; pin_out          ;
+; |bai4|HEX0[4]                   ; |bai4|HEX0[4]                   ; pin_out          ;
+; |bai4|HEX0[5]                   ; |bai4|HEX0[5]                   ; pin_out          ;
+; |bai4|HEX0[6]                   ; |bai4|HEX0[6]                   ; pin_out          ;
+; |bai4|SW[0]                     ; |bai4|SW[0]                     ; out              ;
+; |bai4|SW[1]                     ; |bai4|SW[1]                     ; out              ;
+; |bai4|SW[2]                     ; |bai4|SW[2]                     ; out              ;
+; |bai4|SW[3]                     ; |bai4|SW[3]                     ; out              ;
+; |bai4|seg7_decode:seg0|HEX~0    ; |bai4|seg7_decode:seg0|HEX~0    ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~1    ; |bai4|seg7_decode:seg0|HEX~1    ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~2    ; |bai4|seg7_decode:seg0|HEX~2    ; out0             ;
+; |bai4|seg7_decode:seg0|HEX[0]   ; |bai4|seg7_decode:seg0|HEX[0]   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~4    ; |bai4|seg7_decode:seg0|HEX~4    ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~5    ; |bai4|seg7_decode:seg0|HEX~5    ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~6    ; |bai4|seg7_decode:seg0|HEX~6    ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~7    ; |bai4|seg7_decode:seg0|HEX~7    ; out0             ;
+; |bai4|seg7_decode:seg0|HEX[1]   ; |bai4|seg7_decode:seg0|HEX[1]   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~9    ; |bai4|seg7_decode:seg0|HEX~9    ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~10   ; |bai4|seg7_decode:seg0|HEX~10   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~11   ; |bai4|seg7_decode:seg0|HEX~11   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX[2]   ; |bai4|seg7_decode:seg0|HEX[2]   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~13   ; |bai4|seg7_decode:seg0|HEX~13   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~14   ; |bai4|seg7_decode:seg0|HEX~14   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~15   ; |bai4|seg7_decode:seg0|HEX~15   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~16   ; |bai4|seg7_decode:seg0|HEX~16   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~17   ; |bai4|seg7_decode:seg0|HEX~17   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX[3]   ; |bai4|seg7_decode:seg0|HEX[3]   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~19   ; |bai4|seg7_decode:seg0|HEX~19   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~20   ; |bai4|seg7_decode:seg0|HEX~20   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX[4]   ; |bai4|seg7_decode:seg0|HEX[4]   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~22   ; |bai4|seg7_decode:seg0|HEX~22   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~23   ; |bai4|seg7_decode:seg0|HEX~23   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~24   ; |bai4|seg7_decode:seg0|HEX~24   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~25   ; |bai4|seg7_decode:seg0|HEX~25   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~26   ; |bai4|seg7_decode:seg0|HEX~26   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX[5]   ; |bai4|seg7_decode:seg0|HEX[5]   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~28   ; |bai4|seg7_decode:seg0|HEX~28   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~29   ; |bai4|seg7_decode:seg0|HEX~29   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~30   ; |bai4|seg7_decode:seg0|HEX~30   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~31   ; |bai4|seg7_decode:seg0|HEX~31   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~32   ; |bai4|seg7_decode:seg0|HEX~32   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~33   ; |bai4|seg7_decode:seg0|HEX~33   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~34   ; |bai4|seg7_decode:seg0|HEX~34   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~35   ; |bai4|seg7_decode:seg0|HEX~35   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~36   ; |bai4|seg7_decode:seg0|HEX~36   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX~37   ; |bai4|seg7_decode:seg0|HEX~37   ; out0             ;
+; |bai4|seg7_decode:seg0|HEX[6]   ; |bai4|seg7_decode:seg0|HEX[6]   ; out0             ;
+; |bai4|mux2_1b:mu3|m             ; |bai4|mux2_1b:mu3|m             ; out              ;
+; |bai4|mux2_1b:mu2|m             ; |bai4|mux2_1b:mu2|m             ; out              ;
+; |bai4|mux2_1b:mu1|m             ; |bai4|mux2_1b:mu1|m             ; out              ;
+; |bai4|mux2_1b:mu0|m             ; |bai4|mux2_1b:mu0|m             ; out              ;
+; |bai4|A:tmp|WideOr0             ; |bai4|A:tmp|WideOr0             ; out0             ;
+; |bai4|A:tmp|Decoder0~0          ; |bai4|A:tmp|Decoder0~0          ; out0             ;
+; |bai4|A:tmp|Decoder0~1          ; |bai4|A:tmp|Decoder0~1          ; out0             ;
+; |bai4|A:tmp|Decoder1~0          ; |bai4|A:tmp|Decoder1~0          ; out0             ;
+; |bai4|A:tmp|Decoder1~1          ; |bai4|A:tmp|Decoder1~1          ; out0             ;
+; |bai4|A:tmp|Decoder1~2          ; |bai4|A:tmp|Decoder1~2          ; out0             ;
+; |bai4|comparator:c0|LessThan0~0 ; |bai4|comparator:c0|LessThan0~0 ; out0             ;
+; |bai4|comparator:c0|LessThan0~1 ; |bai4|comparator:c0|LessThan0~1 ; out0             ;
+; |bai4|comparator:c0|LessThan0~2 ; |bai4|comparator:c0|LessThan0~2 ; out0             ;
++---------------------------------+---------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-----------------------------------------------------+
+; Missing 1-Value Coverage                            ;
++---------------+------------------+------------------+
+; Node Name     ; Output Port Name ; Output Port Type ;
++---------------+------------------+------------------+
+; |bai4|HEX1[1] ; |bai4|HEX1[1]    ; pin_out          ;
+; |bai4|HEX1[2] ; |bai4|HEX1[2]    ; pin_out          ;
+; |bai4|HEX1[6] ; |bai4|HEX1[6]    ; pin_out          ;
++---------------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-----------------------------------------------------+
+; Missing 0-Value Coverage                            ;
++---------------+------------------+------------------+
+; Node Name     ; Output Port Name ; Output Port Type ;
++---------------+------------------+------------------+
+; |bai4|HEX1[1] ; |bai4|HEX1[1]    ; pin_out          ;
+; |bai4|HEX1[2] ; |bai4|HEX1[2]    ; pin_out          ;
+; |bai4|HEX1[6] ; |bai4|HEX1[6]    ; pin_out          ;
++---------------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri Mar 14 14:53:35 2025
+Info: Command: quartus_sim --simulation_results_format=VWF bai4 -c bai4
+Info (324025): Using vector source file "C:/Hung/Year3/HK2/CE213/Lab/Lab1/bai4/Waveform.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      95.71 %
+Info (328052): Number of transitions in simulation is 3848
+Info (324045): Vector file bai4.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4444 megabytes
+    Info: Processing ended: Fri Mar 14 14:53:36 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

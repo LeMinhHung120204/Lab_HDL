@@ -1,0 +1,10 @@
+module bai3b(
+	output [6:0] HEX0,
+	input [17:0] SW
+);
+	
+	wire [2:0] a;
+	
+	mux5_1_3 x1(a, SW[17:15], SW[14:12], SW[11:9], SW[8:6], SW[5:3], SW[2:0]);
+	bai3a l1(HEX0, a);
+endmodule 
